@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'font-default';
+    src: url('../assets/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf');
+}
+
+:root {
+    --blue-default: #005CFF;
+    --light-gray: #E7E7EA;
+    --gray: #C2C2C2;
+
+    --font-default: 'font-default', 'sans-serif';
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    font-family: var(--font-default);
+    font-weight: normal;
+}
+
+header {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.199);
+}
+
+.header-desconto {
+    text-align: center;
+    background-color: var(--blue-default);
+    color: #fff;
+    padding: 6px;
+}
+
+.header-desconto p {
+    font-size: 14px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+}
+
+.logo-input {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.header-logo {
+    height: 26px;
+    cursor: pointer;
+}
+
+.inputs-header {
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    padding: 8px 1rem;
+    width: 500px;
+    border-radius: 9px;
+    font-size: 14px;
+    border: 1px solid var(--gray);
+    font-family: var(--font-default);
+    font-weight: bold;
+}
+
+.button-buscar {
+    padding: 4px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.button-buscar i {
+    font-size: 1.4rem;
+}
+
+.cliente-carrinho {
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+}
+
+.cliente-carrinho i {
+    font-size: 1.3rem;
+}
+
+.cliente-carrinho-user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cliente-carrinho-user i {
+    color: var(--blue-default);
+}
+
+.cliente-carrinho-user p {
+    font-size: 12px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    font-size: 13px;
+    padding: 10px 10px 16px 10px;
+}
+
+nav p {
+    cursor: default;
+}
+
+.menu-categorias {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: bold;
+    cursor: default;
+}
+
+.menu-categorias:hover {
+    color: var(--blue-default);
+    transition: 0.3s;
+}
+
+.menu-categorias i {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1400px) {
+    
+    .header-content {
+        justify-content: space-around;
+    }
+
+    nav {
+        gap: 2.4rem;
+        padding: 10px 40px 16px 40px;
+    }
+
+}
