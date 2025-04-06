@@ -3,12 +3,18 @@
     src: url('../assets/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf');
 }
 
+@font-face {
+    font-family: 'font-secundaria';
+    src: url('../assets/fonts/Nunito/Nunito-VariableFont_wght.ttf');
+}
+
 :root {
     --blue-default: #005CFF;
     --light-gray: #E7E7EA;
     --gray: #C2C2C2;
 
     --font-default: 'font-default', 'sans-serif';
+    --font-secundaria: 'font-secundaria', 'sans-serif';
 }
 
 * {
@@ -27,7 +33,14 @@ body {
     font-weight: normal;
 }
 
+/******************** HEADER *******************/
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #fff;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.199);
 }
 
@@ -123,6 +136,11 @@ nav p {
     cursor: default;
 }
 
+nav p:hover {
+    color: var(--blue-default);
+    transition: 0.3s;
+}
+
 .menu-categorias {
     display: flex;
     align-items: center;
@@ -138,6 +156,69 @@ nav p {
 
 .menu-categorias i {
     font-size: 16px;
+}
+
+/******************** HERO SECTION *******************/
+.hero-section {
+    height: 470px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    background-color: var(--light-gray);
+    margin-top: 141px;
+}
+
+.hero-img {
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero-img img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-title-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: var(--font-secundaria);
+}
+
+.hero-title-container h1 {
+    font-size: 4.2rem;
+    padding-bottom: 5px;
+}
+
+.hero-title-container h1 span {
+    font-weight: normal;
+}
+
+.hero-subtitle1 {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    padding-bottom: 8px;
+    color: var(--blue-default);
+}
+
+.hero-subtitle2 {
+    font-size: 2.5rem;
+    color: var(--blue-default);
+}
+
+@media screen and (max-width: 1540px) {
+    
+    .header-content {
+        justify-content: space-around;
+    }
+
+    nav {
+        gap: 2.9rem;
+        padding: 10px 40px 16px 40px;
+    }
+
 }
 
 @media screen and (max-width: 1400px) {
