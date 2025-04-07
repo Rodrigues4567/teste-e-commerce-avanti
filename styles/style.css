@@ -51,6 +51,12 @@ header {
     padding: 6px;
 }
 
+.header-desconto span {
+    background-color: #6220C1;
+    border-radius: 5px;
+    padding: 0px 2px;
+}
+
 .header-desconto p {
     font-size: 14px;
 }
@@ -88,42 +94,42 @@ header {
     font-weight: bold;
 }
 
-.button-buscar {
+.button-search {
     padding: 4px;
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
 
-.button-buscar i {
+.button-search i {
     font-size: 1.4rem;
 }
 
-.cliente-carrinho {
+.customer-cart {
     display: flex;
     align-items: center;
     gap: 1.7rem;
 }
 
-.cliente-carrinho i {
+.customer-cart i {
     font-size: 1.3rem;
 }
 
-.cliente-carrinho-user {
+.customer-cart-user {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.cliente-carrinho-user i {
+.customer-cart-user i {
     color: var(--blue-default);
 }
 
-.cliente-carrinho-user p {
+.customer-cart-user p {
     font-size: 12px;
 }
 
-nav {
+.nav-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,16 +138,16 @@ nav {
     padding: 10px 10px 16px 10px;
 }
 
-nav p {
+.nav-content p {
     cursor: default;
 }
 
-nav p:hover {
+.nav-content p:hover {
     color: var(--blue-default);
     transition: 0.3s;
 }
 
-.menu-categorias {
+.menu-categories {
     display: flex;
     align-items: center;
     gap: 7px;
@@ -149,13 +155,99 @@ nav p:hover {
     cursor: default;
 }
 
-.menu-categorias:hover {
+.menu-categories:hover {
     color: var(--blue-default);
     transition: 0.3s;
 }
 
-.menu-categorias i {
+.menu-categories i {
     font-size: 16px;
+}
+
+/* DROPDOWN MENU */
+.dropdown-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22rem;
+    color: #363636;
+}
+
+.dropdown-options {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.options-arrow-container {
+    background-color: #f7f7f7;
+}
+
+.options-arrow {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    font-size: 13px;
+    padding: 4px 10px;
+}
+
+.general-options {
+    display: flex;
+    justify-content: center;
+    gap: 7.2rem;
+    font-size: 13px;
+}
+
+.options li {
+    list-style: none;
+    padding: 4px;
+}
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    max-width: 220px;
+    height: 275px;
+    overflow: hidden;
+    border-radius: 12px;
+    
+    background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.336)), 
+        url('../assets/images/caneca-cenario-editada.png');
+    background-size: cover;
+    background-position: center;
+}
+  
+.banner-container img {
+    width: 100%;
+    display: block;
+}
+  
+.banner-content {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    color: white;
+    z-index: 10;
+    gap: 1.5rem;
+  
+    display: flex;
+    flex-direction: column;
+
+    font-size: 1.3rem;
+}
+
+.banner-content span {
+    font-weight: lighter;
+}
+
+.banner-content button {
+    width: 120px;
+    padding: 10px 8px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 12px;
 }
 
 /******************** HERO SECTION *******************/
@@ -188,7 +280,7 @@ nav p:hover {
 }
 
 .hero-title-container h1 {
-    font-size: 4.2rem;
+    font-size: 5rem;
     padding-bottom: 5px;
 }
 
@@ -198,13 +290,13 @@ nav p:hover {
 
 .hero-subtitle1 {
     font-size: 1.2rem;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     padding-bottom: 8px;
     color: var(--blue-default);
 }
 
 .hero-subtitle2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--blue-default);
 }
 
