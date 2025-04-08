@@ -165,6 +165,25 @@ header {
 }
 
 /* DROPDOWN MENU */
+.dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 999;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
 .dropdown-menu-container {
     display: flex;
     justify-content: center;
@@ -192,7 +211,6 @@ header {
 
 .general-options {
     display: flex;
-    justify-content: center;
     gap: 7.2rem;
     font-size: 13px;
 }
@@ -300,6 +318,12 @@ header {
     color: var(--blue-default);
 }
 
+/****************** SWIPER-SECTION *********************/
+.card img {
+    height: 190px;
+}
+
+/****************** MEDIA QUERIES *********************/
 @media screen and (max-width: 1540px) {
     
     .header-content {
