@@ -268,7 +268,7 @@ header {
     font-size: 12px;
 }
 
-.logo-input i {
+.menu-burguer-button {
     display: none;
 }
 
@@ -367,6 +367,40 @@ header {
 }
 
 @media screen and (max-width: 1000px) {
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
+        padding: 10px;
+    }
+    
+    .logo-input {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+    .header-logo {
+        height: 18px;
+    }
+    
+    .inputs-header {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .input {
+        width: 90%;
+        padding: 8px 9px;
+    }
+    
+    .customer-cart {
+        width: 100%;
+    }
     
     nav {
         display: none;
@@ -376,8 +410,16 @@ header {
         display: none;
     }
 
-    .logo-input i {
+    .menu-burguer-button i {
         display: block;
+        font-size: 1.7em;
+    }
+
+    .menu-burguer-button {
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
     }
 
 }
