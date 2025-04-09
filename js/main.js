@@ -50,3 +50,26 @@ dropdownMenu.addEventListener('mouseenter', () => {
 dropdownMenu.addEventListener('mouseleave', () => {
     hideDropdown();
 });
+
+// SWIPER
+const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    slidesPerView: 5,
+    spaceBetween: 20,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    // autoplay: {
+    //     delay: 3100,
+    //     disableOnInteraction: true,
+    // },
+});
