@@ -68,8 +68,30 @@ const swiper = new Swiper(".mySwiper", {
         prevEl: ".swiper-button-prev",
     },
 
-    // autoplay: {
-    //     delay: 3100,
-    //     disableOnInteraction: true,
-    // },
+    breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        480: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
+        1280: {
+          slidesPerView: 5,
+        },
+    },
+
+    autoplay: {
+        delay: 3100,
+        disableOnInteraction: true,
+    },
+});
+
+window.addEventListener("resize", () => {
+    swiper.update();
 });

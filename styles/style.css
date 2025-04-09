@@ -339,8 +339,23 @@ header {
 
 .swiper-section-container {
     width: 1255px;
-    background-color: rgba(0, 255, 255, 0.281);
     position: relative;
+    padding-bottom: 35px;
+}
+
+.swiper-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.1rem;
+}
+
+.swiper-title h3 {
+    font-size: 1.2rem;
+}
+
+.swiper-title p {
+    font-size: 14px;
 }
 
 .cards-container {
@@ -359,7 +374,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 60%;
+  top: 55%;
   transform: translateY(-50%);
   z-index: 10;
   right: 5px;
@@ -385,6 +400,7 @@ header {
     width: 240px;
     padding: 11px;
     border-radius: 10px;
+    height: 100%;
 }
 
 .card-img {
@@ -453,7 +469,7 @@ header {
 }
 
 .card-button:hover {
-    background-color: #0957df;
+    background-color: #0b54d1;
     transition: 0.3s;
 }
 
@@ -494,11 +510,27 @@ header {
         gap: 0rem;
     }
 
+    /************* SWIPER-SECTION RESPONSIVE ****************/
+    .swiper-section-container {
+        width: 90vw;
+    }
+
+    .cards-container {
+        width: 90vw;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .card-img img {
+        width: 100%;
+        padding-bottom: 14px;
+    }
+
 }
 
 @media screen and (max-width: 1000px) {
 
-    /******************** HEADER RESPONSIVE *******************/
+    /**************** HEADER RESPONSIVE ****************/
     .header-desconto {
         padding: 6px 25px;
     }
@@ -570,7 +602,7 @@ header {
         cursor: pointer;
     }
 
-    /******************** HERO-SECTION RESPONSIVE *******************/
+    /***************** HERO-SECTION RESPONSIVE ****************/
     .hero-section {
         flex-direction: column-reverse;
         margin-top: 149px;
