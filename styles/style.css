@@ -335,6 +335,7 @@ header {
 .swiper-section {
     display: flex;
     justify-content: center;
+    margin-bottom: 5.5rem;
 }
 
 .swiper-section-container {
@@ -473,7 +474,93 @@ header {
     transition: 0.3s;
 }
 
-/****************** MEDIA QUERIES *********************/
+/****************** ABOUT-SECTION *******************/
+.about-section {
+    margin-bottom: 5rem;
+}
+
+.about-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-section-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 626px;
+    height: 670px;
+    background-color: #C2C2C2;
+}
+
+.about-section-img img {
+    height: 542px;
+}
+
+.about-text {
+    width: 410px;
+}
+
+.about-text h2 {
+    font-family: var(--font-secundaria);
+    padding-bottom: 17px;
+}
+
+.about-text p {
+    padding-bottom: 17px;
+    font-family: var(--font-secundaria);
+}
+
+/****************** CLASSIFICATION-SECTION *******************/
+.classification-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background-color: #DEDEDE;
+    padding: 2.2rem 0px;
+}
+
+.classification-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.6rem;
+    width: 450px;
+}
+
+.classification-text h2 {
+    color: #494949;
+    font-family: var(--font-secundaria);
+}
+
+.text-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.text-icon-container i {
+    font-size: 2.2rem;
+    background-color: var(--blue-default);
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 50%;
+}
+
+.text-icon-container p {
+    color: #494949;
+    font-size: 1.1rem;
+}
+
+.classification-img {
+    height: 680px;
+}
+
+/******************** MEDIA QUERIES ***********************/
 @media screen and (max-width: 1540px) {
     
     .header-content {
@@ -638,6 +725,21 @@ header {
         font-size: 3rem;
     }
 
+    /************* ABOUT-SECTION RESPONSIVE *************/
+    .about-section-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about-section-img {
+        height: 570px;
+        width: 100%;
+    }
+
+    .about-text {
+        width: 90vw;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -650,6 +752,15 @@ header {
     .hero-subtitle1 {
         font-size: 1rem;
         letter-spacing: 2px;
+    }
+
+    /************* ABOUT-SECTION RESPONSIVE *************/
+    .about-section-img img {
+        height: 325px;
+    }
+
+    .about-section-img {
+        height: 380px;
     }
 
 }
