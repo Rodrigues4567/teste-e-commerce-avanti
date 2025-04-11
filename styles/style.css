@@ -573,6 +573,7 @@ header {
     position: relative;
     height: 640px;
     overflow: hidden;
+    margin-bottom: 4rem;
 }
 
 .background-section::before {
@@ -605,6 +606,76 @@ header {
     font-size: 1.4rem;
     color: #fff;
     padding: 2.4rem 0px;
+}
+
+/****************** NEWSLETTER-SECTION *******************/
+.newsletter-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.newsletter-section-title {
+    margin-bottom: 1.4rem;
+    font-size: 1.2rem;
+}
+
+.newsletter-section-title span {
+    color: var(--blue-default);
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 4rem 5.5rem;
+    background-color: #DEDEDE;
+    border-radius: 10px;
+}
+
+.form-inputs {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.newsletter-input {
+    font-size: 15px;
+    font-family: var(--font-default);
+    padding: 12px;
+    width: 250px;
+    border-radius: 7px;
+    border: none;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkbox-label {
+    font-weight: 600;
+    font-size: 12px;
+    color: #363636;
+}
+
+.checkbox-label span {
+    text-decoration: underline;
+}
+
+.newsletter-button {
+    padding: 12px 20px;
+    font-size: 15px;
+    font-family: var(--font-default);
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--blue-default);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 /******************** MEDIA QUERIES ***********************/
@@ -793,6 +864,10 @@ header {
         gap: 2.1rem;
     }
 
+    .newsletter-form {
+        padding: 4rem 4rem;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -847,6 +922,30 @@ header {
     .background-section-text p {
         font-size: 1.1rem;
         padding: 2rem 0px;
+    }
+
+    /************** NEWSLETTER-SECTION RESPONSIVE **************/
+    .newsletter-section-title {
+        font-size: 1.1rem;
+    }
+
+    .newsletter-form {
+        width: 90vw;
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .form-inputs {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .newsletter-input {
+        width: 100%;
+    }
+
+    .newsletter-button {
+        width: 100%;
     }
 
 }
