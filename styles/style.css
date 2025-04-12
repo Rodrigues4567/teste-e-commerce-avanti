@@ -752,6 +752,22 @@ footer {
     gap: 2rem;
 }
 
+.companies-icons-space1 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.companies-icons-space2 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu-accordion {
+    display: none;
+}
+
 /*************** FOOTER-FINAL-SECTION ****************/
 .footer-final {
     display: flex;
@@ -764,6 +780,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 0px 10px;
     width: 1000px;
 }
 
@@ -1048,6 +1065,68 @@ footer {
 
     .newsletter-button {
         width: 100%;
+    }
+
+    /************** FOOTER-SECTION RESPONSIVE **************/
+    footer {
+        padding: 4rem 0px;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menu-accordion {
+        display: block;
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+
+    .menu-accordion-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .acordion-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid var(--gray);
+        border-bottom: 1px solid var(--gray);
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .acordion-item h5 {
+        font-size: 1rem;
+    }
+
+    .acordion-item i {
+        color: var(--blue-default);
+    }
+
+    .infos {
+        display: none;
+    }
+
+    .companies-icons {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.3rem;
     }
 
 }
