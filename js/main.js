@@ -3,9 +3,31 @@ const dropdownMenu = document.getElementById('dropdownMenu');
 const optionsArrowContainer = document.getElementById('optionsArrowContainer');
 const departamentItems = document.querySelectorAll('.nav-content p:not(#menuCategories p)');
 
-function showDropdown(comSetas = false) {
+// Input-text interaction
+const inputTextDesktop = document.querySelector('#inputTextDesktop');
+const buttonSearchDesktop = document.querySelector('#buttonSearchDesktop');
+
+const inputTextMobile = document.querySelector('#inputTextMobile');
+const buttonSearchMobile = document.querySelector('#buttonSearchMobile');
+const result = document.querySelector('.result');
+
+function showResult(value) {
+    const trimmed = value.trim();
+    result.innerHTML = trimmed ? `Você buscou por: <strong>${trimmed}</strong>` : "Por favor, digite algo.";
+}
+
+buttonSearchDesktop.addEventListener('click', () => {
+    showResult(inputTextDesktop.value);
+});
+
+buttonSearchMobile.addEventListener('click', () => {
+    showResult(inputTextMobile.value);
+});
+
+// Dropdown
+function showDropdown(onArrows = false) {
     dropdownMenu.classList.add('show');
-    optionsArrowContainer.style.display = comSetas ? 'block' : 'none';
+    optionsArrowContainer.style.display = onArrows ? 'block' : 'none';
 }
 
 function hideDropdown() {
@@ -26,7 +48,7 @@ menuCategories.addEventListener('mouseleave', () => {
 
 departamentItems.forEach(departament => {
     departament.addEventListener('mouseenter', () => {
-        showDropdown(false); // sem setas
+        showDropdown(false);
     });
 
     departament.addEventListener('mouseleave', () => {

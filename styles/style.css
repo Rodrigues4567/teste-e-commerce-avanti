@@ -137,6 +137,11 @@ header {
     font-size: 12px;
 }
 
+.result {
+    text-align: center;
+    padding-bottom: 4px;
+}
+
 .nav-content {
     display: flex;
     justify-content: center;
